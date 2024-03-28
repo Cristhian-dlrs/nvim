@@ -21,6 +21,13 @@ return {
 
 				-- make
 				null_ls.builtins.diagnostics.cmake_lint,
+
+				-- docker
+				null_ls.builtins.diagnostics.hadolint,
+
+				-- markdown, yml, json
+				null_ls.builtins.diagnostics.markdownlint,
+				null_ls.builtins.diagnostics.yamllint,
 			},
 
 			on_attach = function(client, bufnr)
