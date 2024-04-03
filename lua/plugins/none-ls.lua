@@ -28,6 +28,9 @@ return {
 				-- markdown, yml, json
 				null_ls.builtins.diagnostics.markdownlint,
 				null_ls.builtins.diagnostics.yamllint,
+
+				--Csharp
+				null_ls.builtins.formatting.csharpier,
 			},
 
 			on_attach = function(client, bufnr)
