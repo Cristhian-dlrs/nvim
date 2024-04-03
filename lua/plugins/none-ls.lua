@@ -30,7 +30,7 @@ return {
 				null_ls.builtins.diagnostics.yamllint,
 
 				--Csharp
-				null_ls.builtins.formatting.csharpier,
+				-- null_ls.builtins.formatting.csharpier,
 			},
 
 			on_attach = function(client, bufnr)

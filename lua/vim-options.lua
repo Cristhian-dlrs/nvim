@@ -30,7 +30,7 @@ vim.api.nvim_set_keymap("i", "<C-S-s>", "<Esc>:wa<CR>", { noremap = true, silent
 
 -- Window split
 vim.api.nvim_set_keymap("n", "<leader>ws", "<Cmd>vsplit<CR>", { noremap = true, silent = true })
--- vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Easy indent in normal mode
 vim.api.nvim_set_keymap("n", ">", ">>", { noremap = true, silent = true })
