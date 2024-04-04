@@ -13,9 +13,8 @@ vim.opt.swapfile = false
 -- General
 vim.api.nvim_set_keymap("n", "U", ":redo<cr>", { noremap = true, silent = true }) -- map redo to shift U ofr convinience
 
--- Search
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>") -- disable highlight after search
-
+-- Clear search results
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 -- Navigate vim panes better
 vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
@@ -35,3 +34,7 @@ vim.keymap.set("n", "<leader>q", ":q<CR>")
 -- Easy indent in normal mode
 vim.api.nvim_set_keymap("n", ">", ">>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<", "<<", { noremap = true, silent = true })
+
+-- Macros shortcuts
+vim.keymap.set("n", "Q", "@qj")
+vim.keymap.set("x", "Q", ":norm @q<CR>")
