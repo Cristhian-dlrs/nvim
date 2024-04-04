@@ -23,7 +23,7 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 -- Save files
-vim.api.nvim_set_keymap("n", "<C-s>", "<Cmd>w<CR>", { noremap = true, silent = true }) -- save buffer
+vim.api.nvim_set_keymap("n", "<C-s>", "<Cmd>w<CR>", { noremap = true, silent = true })    -- save buffer
 vim.api.nvim_set_keymap("i", "<C-s>", "<Esc>:ws<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-S-s>", "<Cmd>wa<CR>", { noremap = true, silent = true }) -- save all buffers
 vim.api.nvim_set_keymap("i", "<C-S-s>", "<Esc>:wa<CR>", { noremap = true, silent = true })
